@@ -135,14 +135,14 @@ class ActionSendEmail(Action):
         s.ehlo()
         s.starttls()
         s.ehlo()
-        s.login("nkbprajwal@gmail.com", "upgrad@123")
+        s.login('email','password')
         #s.ehlo()
         # Create the msg object
         msg = EmailMessage()
 
         # Fill in the message properties
         msg['Subject'] = d_email_subj
-        msg['From'] = "nkbprajwal@gmail.com"
+        msg['From'] = "example@gmail.com"
 
         # Fill in the message content
         msg.set_content(d_email_msg)
